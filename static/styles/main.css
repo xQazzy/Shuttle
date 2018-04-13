@@ -116,7 +116,6 @@ body {
 /* main */
 
 .top-menu {
-    background: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -124,10 +123,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #0fc3ff;
 }
 
 .logo {
     margin-right: 10px;
+    width: 100px;
+    line-height: 0;
+    text-decoration: none;
+    outline: none;
+}
+.logo img {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .header {
@@ -418,13 +427,15 @@ body {
     vertical-align: middle;
     /*color: #fff;*/
     margin-left: 10px;
+    font-family: 'caviar_dreamsregular';
+    color: #fff;
 }
 
-/*.hamburger .hamburger-inner,*/
-/*.hamburger .hamburger-inner:after,*/
-/*.hamburger .hamburger-inner:before {*/
-/*background-color: #fff;*/
-/*}*/
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner:after,
+.hamburger .hamburger-inner:before {
+background-color: #fff;
+}
 
 /**/
 
