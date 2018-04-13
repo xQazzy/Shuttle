@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <nav class="top-menu Fixed">
+        <button class="hamburger hamburger--vortex" type="button" id="menu" aria-label="Menu" role="button" tabindex="0"
+                aria-controls="mmenu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+            <span class="hamburger-label">Меню</span>
+        </button>
+        <div class="logo">sdgyfy</div>
+    </nav>
+
+    <header class="header">
+        <div class="layer">
+            <div class="intro animated fadeInLeft">Мы специализируемся на автоматизации малого и среднего бизнеса</div>
+            <div class="intro small animated fadeInRight">Так же предоставляем аутсорс-услуги по обслуживанию и
+                администрированию компьютеров и сетей.
+            </div>
+            <div class="clear"></div>
+            <div class="contacts animated fadeInUp">
+                <a href="tel:79269999999" class="contacts-item">89269999999</a>
+                <a href="mailto:example@example.com" class="contacts-item">example@example.com</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-layer">
+        <h3 class="consult_cap">Закажите <span>бесплатную</span> консультацию</h3>
+        <p class="consult_text">и мы перезвоним точно в указаное время</p>
+        <input type="text" class="consult_input" placeholder="Ваше имя:">
+        <input type="text" class="consult_input" placeholder="Номер телефона:">
+        <input type="text" class="consult_input" placeholder="Дата/время">
+        <input type="text" class="consult_input" placeholder="Услуга">
+        <button class="consult_btn">заказать</button>
+    </div>
+
+    <div class="layer">
+        <div class="title">
+            <h4 class="title_capt">автоматизация бизнеса</h4>
+            <div class="title_desc">внедряем современные информационные технологии, чтобы избавить вас от рутины.</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="servs">
+        <a href="/" class="serv">
+            <div class="serv_img" style="background-image: url('/static/images/blur-business-buy-811103.jpg')"></div>
+            <div class="serv_capt">54-ФЗ</div>
+            <div class="serv_pic" id="cashier"></div>
+            <div class="serv_desc">С 1 февраля 2017 года контрольно-кассовая техника должна отправлять электронные
+                версии чеков оператору фискальных данных — новые правила установлены в 54-ФЗ ст.2 п.2.
+            </div>
+            <button class="order">заказать</button>
+        </a>
+        <a href="/" class="serv">
+            <div class="serv_img" style="background-image: url('/static/images/age-barros-602628-unsplash.jpg')"></div>
+            <div class="serv_capt">Торговое оборудование</div>
+            <div class="serv_pic" id="scanner"></div>
+            <div class="serv_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur atque
+                aut consequatur ducimus ipsum iste molestias, quam rem sapiente tenetur, unde veritatis. At inventore
+                iure quidem repellat ut.
+            </div>
+            <button class="order">заказать</button>
+        </a>
+        <a href="/" class="serv">
+            <div class="serv_img"
+                 style="background-image: url('/static/images/igor-ovsyannykov-520426-unsplash.jpg')"></div>
+            <div class="serv_capt">Торговый учет</div>
+            <div class="serv_pic" id="graphic"></div>
+            <div class="serv_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aliquid
+                consectetur deserunt dolor eligendi eos, facilis labore numquam perferendis quas quia sequi, vitae.
+                Deleniti laborum quo rerum tenetur totam.
+            </div>
+            <button class="order">заказать</button>
+        </a>
+        <div class="clear"></div>
+    </div>
+
+    <div class="layer">
+        <div class="title">
+            <h4 class="title_capt">повышение эффективности</h4>
+            <div class="title_desc">оптимизируем бизнес-процессы, сокращая затраты на время и ресурсы</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container biz-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">повышение производительности</div>
+                    <div class="target-desc">Увеличиваем скорость обработки информации и решений повторяющихся
+                        задач.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">оптимизация управления</div>
+                    <div class="target-desc">Организуем учет и контроль для эффективной поддержки оперативной
+                        деятельности
+                        предприятия.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">понижение рисков</div>
+                    <div class="target-desc">Сводим к минимуму количество ошибок из-за "человеческого фактора" и повысим
+                        точность управления.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">ускоряем делопроизводство</div>
+                    <div class="target-desc">Настраиваем быстрое получение отчетов за любой период времени.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev " data-swiper="prev" id="prev"></div>
+        <div class="swiper-button-next " data-swiper="next" id="next"></div>
+    </div>
+
+    <div class="layer">
+        <div class="title out-mod">
+            <h4 class="title_capt">IT<br>аутсорсинг</h4>
+            <div class="title_desc">поддерживаем, обслуживаем и модернизируем IT-инфраструктуру.</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="servs">
+        <a href="/" class="serv out-mod">
+            <div class="serv_img" style="background-image: url('/static/images/martin-shreder-349256-unsplash.jpg')"></div>
+            <div class="serv_capt">обслуживание компьютеров и сетей</div>
+            <div class="serv_pic" id="technology"></div>
+            <div class="serv_desc">С 1 февраля 2017 года контрольно-кассовая техника должна отправлять электронные
+                версии чеков оператору фискальных данных — новые правила установлены в 54-ФЗ ст.2 п.2.
+            </div>
+            <button class="order">заказать</button>
+        </a>
+        <a href="/" class="serv out-mod">
+            <div class="serv_img" style="background-image: url('/static/images/coding-computer-data-577585.jpg')"></div>
+            <div class="serv_capt">1с администрирование</div>
+            <div class="serv_pic" id="computer"></div>
+            <div class="serv_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur atque
+                aut consequatur ducimus ipsum iste molestias, quam rem sapiente tenetur, unde veritatis. At inventore
+                iure quidem repellat ut.
+            </div>
+            <button class="order">заказать</button>
+        </a>
+        <a href="/" class="serv out-mod">
+            <div class="serv_img"
+                 style="background-image: url('/static/images/analogue-blur-business-159282.jpg')"></div>
+            <div class="serv_capt">виртуальный сервер для 1с</div>
+            <div class="serv_pic" id="cloud"></div>
+            <div class="serv_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aliquid
+                consectetur deserunt dolor eligendi eos, facilis labore numquam perferendis quas quia sequi, vitae.
+                Deleniti laborum quo rerum tenetur totam.
+            </div>
+            <button class="order">заказать</button>
+        </a>
+        <div class="clear"></div>
+    </div>
+
+    <div class="layer">
+        <div class="title out-mod">
+            <h4 class="title_capt">IT<br>аутсорсинг</h4>
+            <div class="title_desc">внедряем современные информационные технологии, чтобы избавить вас от рутины.</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container out-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">повышение производительности</div>
+                    <div class="target-desc">Увеличиваем скорость обработки информации и решений повторяющихся
+                        задач.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">оптимизация управления</div>
+                    <div class="target-desc">Организуем учет и контроль для эффективной поддержки оперативной
+                        деятельности
+                        предприятия.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">понижение рисков</div>
+                    <div class="target-desc">Сводим к минимуму количество ошибок из-за "человеческого фактора" и повысим
+                        точность управления.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="target-bg">
+                    <div class="target-br"></div>
+                    <div class="target-caption">ускоряем делопроизводство</div>
+                    <div class="target-desc">Настраиваем быстрое получение отчетов за любой период времени.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev " data-swiper="prev" id="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z"></path></svg>
+        </div>
+        <div class="swiper-button-next " data-swiper="next" id="next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z"></path></svg>
+        </div>
+    </div>
+
+
+    <footer></footer>
+{% endblock %}

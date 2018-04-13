@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" href="{% static 'styles/main.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'styles/vendor/mmenu/jquery.mmenu.all.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'styles/vendor/hamburger/hamburgers.min.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'styles/vendor/normalize.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'styles/vendor/swiper/swiper.min.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'styles/vendor/animate/animate.min.css' %}" rel="stylesheet">
+    {% block additional_css %}{% endblock %}
+    {% block additional_js %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-content" id="page">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <nav class="menu" id="mmenu">
+        <ul>
+            <li>One</li>
+            <li>One!</li>
+            <li>One!!</li>
+            <li>One!!!</li>
+        </ul>
+    </nav>
+
+    <script src="{% static 'js/vendor/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/vendor/mmenu/jquery.mmenu.all.js' %}"></script>
+    <script src="{% static 'js/vendor/jarallax/jarallax.min.js' %}"></script>
+    <script src="{% static 'js/vendor/swiper/swiper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/llp/jquery.lazylinepainter-1.7.0.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
