@@ -447,6 +447,12 @@ background-color: #fff;
     background-position: center;
     background-size: cover;
 }
+.swiper-container.out-swiper {
+    width: 100%;
+    background: url("/static/images/adult-blur-business-630839.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .swiper-wrapper {
 
