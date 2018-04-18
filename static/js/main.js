@@ -528,5 +528,22 @@ $(document).ready(function () {
 
     /* */
 
+    ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init() {
+        myMap = new ymaps.Map("map", {
+            center: [55.376933, 36.764299],
+            zoom: 16
+        });
+        myPlacemark = new ymaps.Placemark([55.376933, 36.764299], {
+            hintContent: 'Мы здесь!',
+            balloonContent: 'Fit Solutions'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+
 
 });
